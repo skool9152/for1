@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Formulario</h2>
+    <form>
+        <label for="dni">DNI:</label>
+        <input type="text" id="dni" placeholder="Pon tu DNI" required>
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" required>
+
+        <label for="contraseña">Contraseña:</label>
+        <input type="password" id="contraseña" required>
+
+        <label for="gmail">Gmail:</label>
+        <input type="email" id="gmail" required>
+
+        <label>Sexo:</label>
+        <select id="sexo" required>
+            <option value="" disabled selected>Selecciona...</option>
+            <option value="masculino">Masculino</option>
+            <option value="femenino">Femenino</option>
+        </select>
+
+        <label>Nivel de estudio:</label>
+        <select id="nivel-estudio" required>
+            <option value="" disabled selected>Selecciona...</option>
+            <option value="no-estudios">No tengo estudios</option>
+            <option value="tecnico">Técnico</option>
+            <option value="universitario">Universitario</option>
+        </select>
+
+        <label for="pais">País:</label>
+        <select id="pais" required>
+            <option value="" disabled selected>Selecciona...</option>
+            <option value="peru">Perú</option>
+            <!-- Puedes agregar más países aquí -->
+        </select>
+
+        <button type="submit">Enviar</button>
+    </form>
+</div>
+
+</body>
+</html>
+
